@@ -37,3 +37,16 @@ body {
 .navbar-dark {
     background-color: #512da8;
 }
+
+#resb {
+    margin-top: 4%;
+}
+#reservation 
+
+{
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+    padding: 50px 0px 50px 100px;
+
+}
