@@ -90,12 +90,77 @@
         </div>
     </nav>
 
+    <div id="reservation" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"> Reserve a Table </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group row">
+
+                            <p class="col-12 col-md-2 col-sm-12">Number of Guests </p>
+                            <div class="col-12 col-sm-6 col-md-6">
+                                <label class="radio-inline mr-2"><input type="radio" name="optradio"> 1</label>
+                                <label class="radio-inline mr-2"><input type="radio" name="optradio"> 2</label>
+                                <label class="radio-inline mr-2"><input type="radio" name="optradio"> 3</label>
+                                <label class="radio-inline mr-2"><input type="radio" name="optradio"> 4</label>
+                                <label class="radio-inline mr-2"><input type="radio" name="optradio"> 5</label>
+                                <label class="radio-inline "><input type="radio" name="optradio"> 6</label>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <p class="col-12 col-md-2 col-sm-12">Section </p>
+
+                            <button type="button" class="btn btn-success active ml-3">Non-Smoking</button>
+                            <button type="button" class="btn btn-danger">Smoking</button>
+
+
+                        </div>
+                        <div class="form-group row">
+                            <label for="datetime" class="col-md-2 col-form-label">Date and Time</label>
+                            <div class="col-md-3">
+                                <input type="text" class="form-control" name="date" id="date" placeholder="Date">
+                            </div>
+                            <div class="col-md-3">
+                                <input type="text" class="form-control" name="time" id="time" placeholder="Time">
+                            </div>
+
+                        </div>
+
+                        <div class="form-group row">
+
+
+
+                        </div>
+
+                        <div class="form-group row">
+
+                            <p class="col-12 col-md-2 col-sm-12"></p>
+
+                            <button type="button" class="btn btn-secondary btn-sm ml-3"
+                                data-dismiss="modal">Cancel</button>
+
+
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Reserve</button>
+                        </div>
+                </div>
+
+            </div>
+        </div>
+        </form>
+
+    </div>
+    </div>
+    </div>
+
 
 
     <header class="jumbotron">
         <div class="container">
-
-
             <div class="row row-header align-items-center">
 
                 <div class="col col-md-6">
@@ -107,12 +172,18 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
 
+
+
                 <div class="col-12 col-sm align-self-center">
-                    <a role="button" class="btn btn-block nav-link btn-warning" data-toggle="tooltip" data-html="true"
-                        title="Or Call us at  <br><strong>+852 12345678</strong>" data-placement="bottom"
-                        href="#reservebutton">
+
+                    <a role="button" class="btn btn-block nav-link btn-warning" data-toggle="modal"
+                        data-target="#reservation">
                         Reserve Table
                     </a>
+
+
+
+
                 </div>
             </div>
 
@@ -283,39 +354,40 @@
                 </h3>
 
                 <div class="card-body">
+                    <form action="">
+                        <div class="form-group row">
 
-                    <div class="form-group row">
-
-                        <p class="col-12 col-md-2 col-sm-12">Number of Guests </p>
-                        <div class="col-12 col-sm-4 col-md-4">
-                            <label class="radio-inline mr-2"><input type="radio" name="optradio"> 1</label>
-                            <label class="radio-inline mr-2"><input type="radio" name="optradio"> 2</label>
-                            <label class="radio-inline mr-2"><input type="radio" name="optradio"> 3</label>
-                            <label class="radio-inline mr-2"><input type="radio" name="optradio"> 4</label>
-                            <label class="radio-inline mr-2"><input type="radio" name="optradio"> 5</label>
-                            <label class="radio-inline "><input type="radio" name="optradio"> 6</label>
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <label for="datetime" class="col-md-2 col-form-label">Date and Time</label>
-                        <div class="col-md-5">
-                            <input type="text" class="form-control" name="date" id="date" placeholder="Date">
-                        </div>
-                        <div class="col-md-5">
-                            <input type="text" class="form-control" name="time" id="time" placeholder="Time">
+                            <p class="col-12 col-md-2 col-sm-12">Number of Guests </p>
+                            <div class="col-12 col-sm-6 col-md-6">
+                                <label class="radio-inline mr-2"><input type="radio" name="optradio"> 1</label>
+                                <label class="radio-inline mr-2"><input type="radio" name="optradio"> 2</label>
+                                <label class="radio-inline mr-2"><input type="radio" name="optradio"> 3</label>
+                                <label class="radio-inline mr-2"><input type="radio" name="optradio"> 4</label>
+                                <label class="radio-inline mr-2"><input type="radio" name="optradio"> 5</label>
+                                <label class="radio-inline "><input type="radio" name="optradio"> 6</label>
+                            </div>
                         </div>
 
-                    </div>
-
-                    <div class="form-group row">
-                        <div class="col-12 col-md-2">
+                        <div class="form-group row">
+                            <label for="datetime" class="col-md-2 col-form-label">Date and Time</label>
+                            <div class="col-md-5">
+                                <input type="text" class="form-control" name="date" id="date" placeholder="Date">
+                            </div>
+                            <div class="col-md-5">
+                                <input type="text" class="form-control" name="time" id="time" placeholder="Time">
+                            </div>
 
                         </div>
-                        <div class=" col-4 col-md-4" id="resb">
-                            <a href="#" class="btn btn-primary" id="reservebutton"> Reserve </a>
+
+                        <div class="form-group row">
+                            <div class="col-12 col-md-2">
+
+                            </div>
+                            <div class=" col-4 col-md-4" id="resb">
+                                <a href="#" class="btn btn-primary" id="reservebutton"> Reserve </a>
+                            </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
 
             </div>
